@@ -1,6 +1,6 @@
 describe("About variables and If Statments", function() {
   it("should create a variable called myFirstVariable and set it equal to 1", function() {
-    //code goes here.
+    var myFirstVariable = 1
     expect(myFirstVariable).toBe(1);
   });
 
@@ -18,7 +18,7 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('C');
   });
 
   it("should understand equality operators", function () {
@@ -27,7 +27,7 @@ describe("About variables and If Statments", function() {
     
     if(favoriteNumber === 33){
       answer = 'A';
-    } else if(favoriteNumber == 33){
+    } else if(favoriteNumber === 33){
       answer = 'B';
     } else if(favoriteNumber === '33'){
       answer = 'C';
@@ -35,9 +35,9 @@ describe("About variables and If Statments", function() {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('C');
 
-    //explain your answer here.
+    //the first two are numbers, the third one is a string.
   });
 
   it("should understand equality operators, again", function () {
@@ -48,29 +48,29 @@ describe("About variables and If Statments", function() {
       answer = 'A';
     } else if(favoriteNumber === 40){
       answer = 'B';
-    } else if(favoriteNumber = 12){
+    } else if(favoriteNumber === 12){
       answer = 'C';
     } else {
       answer = 'D';
     }
 
-    expect(answer).toBe(FILL_ME_IN);
+    expect(answer).toBe('D');
 
-    //explain your answer here.
+    //It doesn't meet any of the conditions, therefore the else function is activated
   });
 
   it('should understand adding strings', function(){
     var num = '3';
-    expect(num + 8).toBe(FILL_ME_IN);
+    expect(num + 8).toBe('38');
 
-    //explain your answer here.
+    //since three is a string it concatenates it to 8 instead of adding it
   });
 
   it('should understand adding strings, again', function(){
     var num = '1';
-    expect(num + FILL_ME_IN).toBe('18');
+    expect(num + '8').toBe('18');
 
-    //explain your answer here.
+    //the plus sign concatenates the numbers instead of adding them
   });
 });
 

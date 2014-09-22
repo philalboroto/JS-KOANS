@@ -11,7 +11,7 @@ describe('About Truthy and Falsy', function(){
 
   it('should all be falsy', function(){
     //replace all the FILL_ME_IN's with 4 different Falsy values
-    var falsyArray = [FILL_ME_IN, FILL_ME_IN, FILL_ME_IN, FILL_ME_IN];
+    var falsyArray = [a=b, 1=2, 3=4, j=k];
 
     var flag = true;
     for(var i = 0; i < falsyArray.length; i++){
